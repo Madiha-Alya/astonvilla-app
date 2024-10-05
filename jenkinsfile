@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Checkout') {
             steps {
-              git url: 'https://github.com/Madiha-Alya/astonvilla-app.git'
+              git  branch: 'release-1',  url: 'https://github.com/Madiha-Alya/astonvilla-app.git'
             }
         }
         stage('Run Sonar Server') {
