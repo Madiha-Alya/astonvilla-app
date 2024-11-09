@@ -9,7 +9,7 @@ pipeline {
             }
         }
       
-}
+
         stage ("Generate docker image") {
             steps {
                 sh "docker build -t madiha2000/astonvilla-app:1.1.${env.BUILD_NUMBER} ."
