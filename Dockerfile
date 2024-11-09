@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm install --force
 
-RUN npm install -g @angular/cli@8.1.2 --force
+RUN npm install -g @angular/cli@8.1.2 
 
 COPY . .
 
