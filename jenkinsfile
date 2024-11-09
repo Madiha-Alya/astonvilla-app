@@ -2,11 +2,7 @@ pipeline {
     agent any 
     
     stages {
-        stage ("Clean up"){
-            steps {
-                 deleteDir()
-            }
-        }
+     
         stage('Checkout') {
             steps {
               git  branch: 'release-1',  url: 'https://github.com/Madiha-Alya/astonvilla-app.git'
